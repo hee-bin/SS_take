@@ -1,0 +1,41 @@
+/* 맵을 표시할 div의 크기 지정 */
+#map {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto; 
+  }
+  
+
+
+
+
+  .marker-overlay {
+    font-size: 17px; /* 숫자의 크기 설정 */
+    color: #ffffff; /* 숫자의 색상 설정 (여기서는 흰색으로 설정했습니다) */
+  }
+  
+
+/* 인포 윈도우 스타일 */
+.info-window {
+  width: 280px; /* 인포 윈도우의 너비 조정 */
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px; /* 인포 윈도우의 모서리를 둥글게 설정 */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 추가 */
+}
+
+
+
+/* 모서리 색상 */
+.info-window::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+  

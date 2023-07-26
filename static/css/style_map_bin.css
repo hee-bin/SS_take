@@ -1,0 +1,18 @@
+/* 맵을 표시할 div의 크기 지정 */
+#map {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto; 
+}
+
+
+
+/* 인포 윈도우 스타일 */
+.info-window {
+  width: 280px; /* 인포 윈도우의 너비 조정 */
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px; /* 인포 윈도우의 모서리를 둥글게 설정 */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 추가 */
+  }
+  

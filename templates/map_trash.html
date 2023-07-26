@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Map - Trash
+{% endblock %}
+
+{% block content %}
+
+<div id="map" ></div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_map.css') }}">
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c8628fe2f5e5b695725e9c27a136c5e"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+
+<script>
+    var address = '{{ address }}';
+    var lat = {{ lat }};
+    var lng = {{ lng }};
+    var canCount = {{ can }};
+    var petCount = {{ pet }};
+  </script>
+
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/trash.js') }}"></script>
+
+{% endblock %}

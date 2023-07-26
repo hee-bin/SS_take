@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+  color: black;
+  }
+  
+  h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  }
+  
+  .section-divider {
+  margin-top: 2rem;
+  }
+  
+  .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 1.5rem;
+  }
+  
+  .fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+  to {
+  opacity: 1;
+  }
+  }
+  
+  .image-container {
+  text-align: center;
+  margin-top: 2rem;
+  }
+  
+  .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0.5rem;
+  max-height: 200px; /* Adjust the value as needed */
+  }
+  
+  .highlight {
+  color: #a4a01d;
+  }
+  

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_home.css') }}">
+  </head>
+<body>
+  <nav>
+    <h1>SSTAKE</h1>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/map_trash">Trash</a></li>
+        <li><a href="/map_bin">Bin</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+
+  
+
+  <!-- 필요한 스크립트 파일들 포함 -->
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <img src="/static/image/trash.png" style="display: none;">
+
+</body>
+</html>
